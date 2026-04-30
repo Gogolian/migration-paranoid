@@ -625,6 +625,7 @@ def django_rules(text: str, file: str, _dialect: Dialect) -> List[Finding]:
                 severity=Severity.MEDIUM,
                 snippet=_line_text(text, line),
                 risks=["Breaks rolling deploys: older code references the old name."],
+                suggestion="Use a database view aliasing the new table during the transition.",
             )
         )
 

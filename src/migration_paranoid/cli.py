@@ -111,7 +111,9 @@ def _summarize(findings: List[Finding]) -> str:
         for s in (Severity.CRITICAL, Severity.HIGH, Severity.MEDIUM, Severity.LOW, Severity.INFO)
         if counts.get(s)
     ]
-    return f"Summary: {len(findings)} finding(s) — " + ", ".join(parts) if parts else "Summary: 0 findings"
+    if not parts:
+        return "Summary: 0 findings"
+    return f"Summary: {len(findings)} finding(s) — " + ", ".join(parts)
 
 
 def _render_json(findings: List[Finding]) -> str:
