@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/migration_paranoid/__init__.py
+src/migration_paranoid/__main__.py
+src/migration_paranoid/cli.py
+src/migration_paranoid/finding.py
+src/migration_paranoid/rules.py
+src/migration_paranoid/scanner.py
+src/migration_paranoid.egg-info/PKG-INFO
+src/migration_paranoid.egg-info/SOURCES.txt
+src/migration_paranoid.egg-info/dependency_links.txt
+src/migration_paranoid.egg-info/entry_points.txt
+src/migration_paranoid.egg-info/top_level.txt
+tests/test_basic.py

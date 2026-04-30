@@ -1,0 +1,7 @@
+<databaseChangeLog>
+  <changeSet id="1" author="me">
+    <dropColumn tableName="users" columnName="legacy"/>
+    <addNotNullConstraint tableName="users" columnName="email"/>
+    <renameTable oldTableName="foo" newTableName="bar"/>
+  </changeSet>
+</databaseChangeLog>

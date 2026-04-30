@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "migration-paranoid"
+version = "0.1.0"
+description = "Static analyzer for risky database migrations."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "migration-paranoid contributors" }]
+keywords = ["database", "migrations", "static-analysis", "linter", "sql"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+migration-paranoid = "migration_paranoid.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Gogolian/migration-paranoid"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+migration_paranoid = ["py.typed"]

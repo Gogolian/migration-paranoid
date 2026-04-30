@@ -1,0 +1,2 @@
+[console_scripts]
+migration-paranoid = migration_paranoid.cli:main

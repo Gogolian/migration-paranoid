@@ -1,3 +1,21 @@
+Metadata-Version: 2.4
+Name: migration-paranoid
+Version: 0.1.0
+Summary: Static analyzer for risky database migrations.
+Author: migration-paranoid contributors
+License: MIT
+Project-URL: Homepage, https://github.com/Gogolian/migration-paranoid
+Keywords: database,migrations,static-analysis,linter,sql
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
 # migration-paranoid
 
 Static analyzer for risky database migrations.
