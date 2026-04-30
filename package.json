@@ -1,0 +1,18 @@
+{
+  "name": "migration-paranoid",
+  "version": "1.0.0",
+  "description": "Static analyzer for risky database migrations",
+  "main": "src/index.js",
+  "bin": {
+    "migration-paranoid": "bin/migration-paranoid.js"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint src bin tests"
+  },
+  "keywords": ["migrations", "database", "static-analysis", "linter"],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
